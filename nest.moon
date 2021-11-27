@@ -48,4 +48,5 @@ class Nest
 	-- Broom support
 	Destroy: =>
 		@Events = {}
+		@Destroyed = true
 		@emit = ->

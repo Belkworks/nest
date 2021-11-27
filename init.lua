@@ -70,6 +70,7 @@ do
     end),
     Destroy = function(self)
       self.Events = { }
+      self.Destroyed = true
       self.emit = function() end
     end
   }
