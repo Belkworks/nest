@@ -26,7 +26,7 @@ nest:emit('message', 'test', 123)
 ### Listening for events
 
 To listen to a named event, call `Nest:on`  
-**on**: `Nest:on(name, callback) -> nil`
+**on**: `Nest:on(name, callback) -> Nest`
 ```lua
 nest:on('message', function(...)
 	-- Do something 
@@ -34,7 +34,7 @@ end)
 ```
 
 To listen to a named event only once, call `Nest:once`  
-**once**: `Nest:once(name, callback) -> nil`
+**once**: `Nest:once(name, callback) -> Nest`
 ```lua
 nest:once('message', function(...)
 	-- Do something just once
